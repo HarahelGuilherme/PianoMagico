@@ -29,7 +29,7 @@ h1 {
 
 .tecla.branca {
     width: 60px;
-    height: 250px;
+    height: 250px; /* Altura das teclas brancas */
     background-color: white;
     margin-right: 2px;
     z-index: 1; /* Brancas ficam abaixo */
@@ -37,7 +37,7 @@ h1 {
 
 .tecla.preta {
     width: 40px;
-    height: 160px; /* Altura reduzida para encaixar sobre as brancas */
+    height: 140px; /* Altura reduzida para encaixar melhor */
     background-color: black;
     color: white;
     position: absolute;
