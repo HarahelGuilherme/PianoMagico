@@ -10,56 +10,59 @@ h1 {
 }
 
 .piano {
-    display: flex;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .tecla {
     border: 1px solid #000;
-    position: relative;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .tecla.branca {
-    width: 50px;
-    height: 200px;
-    background: white;
-    margin-right: 2px;
+    width: 60px;
+    height: 250px;
+    background-color: white;
+    margin: 0 2px;
+    z-index: 1;
 }
 
 .tecla.preta {
-    width: 30px;
-    height: 120px;
-    background: black;
+    width: 40px;
+    height: 150px;
+    background-color: black;
     position: absolute;
-    z-index: 1; /* Colocar as teclas pretas sobre as brancas */
-    margin-right: -15px; /* Para alinhar as pretas com as brancas */
+    z-index: 2; /* As teclas pretas devem estar acima das brancas */
+    margin-left: -20px; /* Centraliza a tecla preta entre duas brancas */
 }
 
-.tecla.branca:nth-child(2) ~ .tecla.preta {
-    left: 35px; /* Ajusta a posição da tecla preta */
+/* Posição das teclas pretas sobre as brancas */
+.tecla.preta:nth-child(2) { /* C# */
+    left: 45px;
 }
 
-.tecla.branca:nth-child(4) ~ .tecla.preta {
-    left: 95px; /* Ajusta a posição da tecla preta */
+.tecla.preta:nth-child(3) { /* D# */
+    left: 135px;
 }
 
-.tecla.branca:nth-child(7) ~ .tecla.preta {
-    left: 175px; /* Ajusta a posição da tecla preta */
+.tecla.preta:nth-child(5) { /* F# */
+    left: 315px;
 }
 
-.tecla.branca:nth-child(9) ~ .tecla.preta {
-    left: 235px; /* Ajusta a posição da tecla preta */
+.tecla.preta:nth-child(6) { /* G# */
+    left: 405px;
 }
 
-.tecla.branca:nth-child(11) ~ .tecla.preta {
-    left: 295px; /* Ajusta a posição da tecla preta */
+.tecla.preta:nth-child(7) { /* A# */
+    left: 495px;
 }
 
 .tecla.branca:hover {
-    background: #f0f0f0; /* Efeito de hover para teclas brancas */
+    background-color: #f0f0f0;
 }
 
 .tecla.preta:hover {
-    background: #333; /* Efeito de hover para teclas pretas */
+    background-color: #333;
 }

@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piano Virtual</title>
+    <title>Piano Virtual Realista</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Piano Virtual</h1>
+    <h1>Piano Virtual Realista</h1>
     <div class="piano">
-        <!-- Teclas Brancas e Pretas -->
+        <!-- Teclas Brancas -->
         <div class="tecla branca" onclick="tocarNota('C')"></div>
-        <div class="tecla preta" onclick="tocarNota('Csharp')"></div>
         <div class="tecla branca" onclick="tocarNota('D')"></div>
-        <div class="tecla preta" onclick="tocarNota('Dsharp')"></div>
         <div class="tecla branca" onclick="tocarNota('E')"></div>
         <div class="tecla branca" onclick="tocarNota('F')"></div>
-        <div class="tecla preta" onclick="tocarNota('Fsharp')"></div>
         <div class="tecla branca" onclick="tocarNota('G')"></div>
-        <div class="tecla preta" onclick="tocarNota('Gsharp')"></div>
         <div class="tecla branca" onclick="tocarNota('A')"></div>
-        <div class="tecla preta" onclick="tocarNota('Asharp')"></div>
         <div class="tecla branca" onclick="tocarNota('B')"></div>
+        
+        <!-- Teclas Pretas -->
+        <div class="tecla preta" onclick="tocarNota('Csharp')"></div>
+        <div class="tecla preta" onclick="tocarNota('Dsharp')"></div>
+        <div class="tecla preta" onclick="tocarNota('Fsharp')"></div>
+        <div class="tecla preta" onclick="tocarNota('Gsharp')"></div>
+        <div class="tecla preta" onclick="tocarNota('Asharp')"></div>
     </div>
 
-    <!-- Sons de cada tecla (faça o download e coloque na pasta correta) -->
+    <!-- Sons de cada tecla -->
     <audio id="C" src="audio/C.mp3"></audio>
     <audio id="Csharp" src="audio/Csharp.mp3"></audio>
     <audio id="D" src="audio/D.mp3"></audio>
