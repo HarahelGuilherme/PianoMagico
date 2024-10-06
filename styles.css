@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.piano {
+    display: flex;
+    position: relative;
+}
+
+.tecla {
+    border: 1px solid #000;
+    position: relative;
+}
+
+.tecla.branca {
+    width: 50px;
+    height: 200px;
+    background: white;
+}
+
+.tecla.preta {
+    width: 30px;
+    height: 120px;
+    background: black;
+    position: absolute;
+    z-index: 1; /* Teclas pretas devem aparecer sobre as brancas */
+    left: 35px; /* Espaçamento */
+}
+
+.tecla.branca:nth-child(2) .tecla.preta {
+    left: 40px; /* Ajusta a posição da tecla preta */
+}
+
+.tecla.branca:nth-child(4) .tecla.preta {
+    left: 40px; /* Ajusta a posição da tecla preta */
+}
+
+.tecla.branca:nth-child(7) .tecla.preta {
+    left: 40px; /* Ajusta a posição da tecla preta */
+}
+
+.tecla.branca:nth-child(9) .tecla.preta {
+    left: 40px; /* Ajusta a posição da tecla preta */
+}
+
+.tecla.branca:hover {
+    background: #f0f0f0; /* Cor ao passar o mouse sobre teclas brancas */
+}
+
+.tecla.preta:hover {
+    background: #555; /* Cor ao passar o mouse sobre teclas pretas */
+}
