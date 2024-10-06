@@ -36,7 +36,7 @@ h1 {
 }
 
 .tecla.preta {
-    width: 35px;
+    width: 35px; /* Largura das teclas pretas */
     height: 110px; /* Altura reduzida para encaixar melhor */
     background-color: black;
     color: white;
@@ -46,23 +46,23 @@ h1 {
 
 /* Posição das teclas pretas sobre as brancas */
 .tecla.preta:nth-of-type(2) { /* C# */
-    left: 40px; /* Alinhado acima de D */
+    left: 50px; /* Alinhado acima da tecla C */
 }
 
 .tecla.preta:nth-of-type(4) { /* D# */
-    left: 125px; /* Alinhado acima de E */
+    left: 125px; /* Alinhado acima da tecla D */
 }
 
 .tecla.preta:nth-of-type(7) { /* F# */
-    left: 265px; /* Alinhado acima de G */
+    left: 265px; /* Alinhado acima da tecla F */
 }
 
 .tecla.preta:nth-of-type(9) { /* G# */
-    left: 350px; /* Alinhado acima de A */
+    left: 350px; /* Alinhado acima da tecla G */
 }
 
 .tecla.preta:nth-of-type(11) { /* A# */
-    left: 435px; /* Alinhado acima de B */
+    left: 425px; /* Alinhado acima da tecla A */
 }
 
 /* Efeitos ao pressionar teclas */
