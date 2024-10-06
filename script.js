@@ -4,10 +4,10 @@ function tocarNota(nota) {
     const tecla = document.querySelector(`[data-note="${nota}"]`);
     
     if (audio) {
-        audio.currentTime = 0;
-        audio.play();
+        audio.currentTime = 0;  // Reinicia o som se já estiver tocando
+        audio.play();  // Toca a nota
         tecla.classList.add('ativa'); // Adiciona efeito visual
-        setTimeout(() => tecla.classList.remove('ativa'), 200); // Remove o efeito visual
+        setTimeout(() => tecla.classList.remove('ativa'), 200); // Remove o efeito visual após 200ms
     }
 }
 
