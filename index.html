@@ -7,26 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Piano Virtual Realista</h1>
+    <h1>Piano Virtual</h1>
     <div class="piano">
         <!-- Teclas Brancas -->
-        <div class="tecla branca" onclick="tocarNota('C')"></div>
-        <div class="tecla branca" onclick="tocarNota('D')"></div>
-        <div class="tecla branca" onclick="tocarNota('E')"></div>
-        <div class="tecla branca" onclick="tocarNota('F')"></div>
-        <div class="tecla branca" onclick="tocarNota('G')"></div>
-        <div class="tecla branca" onclick="tocarNota('A')"></div>
-        <div class="tecla branca" onclick="tocarNota('B')"></div>
-        
-        <!-- Teclas Pretas -->
-        <div class="tecla preta" onclick="tocarNota('Csharp')"></div>
-        <div class="tecla preta" onclick="tocarNota('Dsharp')"></div>
-        <div class="tecla preta" onclick="tocarNota('Fsharp')"></div>
-        <div class="tecla preta" onclick="tocarNota('Gsharp')"></div>
-        <div class="tecla preta" onclick="tocarNota('Asharp')"></div>
+        <div class="tecla branca" data-note="C" data-key="Z" onclick="tocarNota('C')">Z</div>
+        <div class="tecla preta" data-note="Csharp" data-key="S" onclick="tocarNota('Csharp')">S</div>
+        <div class="tecla branca" data-note="D" data-key="X" onclick="tocarNota('D')">X</div>
+        <div class="tecla preta" data-note="Dsharp" data-key="D" onclick="tocarNota('Dsharp')">D</div>
+        <div class="tecla branca" data-note="E" data-key="C" onclick="tocarNota('E')">C</div>
+        <div class="tecla branca" data-note="F" data-key="V" onclick="tocarNota('F')">V</div>
+        <div class="tecla preta" data-note="Fsharp" data-key="G" onclick="tocarNota('Fsharp')">G</div>
+        <div class="tecla branca" data-note="G" data-key="B" onclick="tocarNota('G')">B</div>
+        <div class="tecla preta" data-note="Gsharp" data-key="H" onclick="tocarNota('Gsharp')">H</div>
+        <div class="tecla branca" data-note="A" data-key="N" onclick="tocarNota('A')">N</div>
+        <div class="tecla preta" data-note="Asharp" data-key="J" onclick="tocarNota('Asharp')">J</div>
+        <div class="tecla branca" data-note="B" data-key="M" onclick="tocarNota('B')">M</div>
     </div>
 
-    <!-- Sons de cada tecla -->
+    <!-- Sons de cada tecla (faça o download e coloque na pasta correta) -->
     <audio id="C" src="audio/C.mp3"></audio>
     <audio id="Csharp" src="audio/Csharp.mp3"></audio>
     <audio id="D" src="audio/D.mp3"></audio>

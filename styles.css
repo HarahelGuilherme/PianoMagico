@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 h1 {
@@ -10,22 +11,25 @@ h1 {
 }
 
 .piano {
-    position: relative;
     display: flex;
-    justify-content: center;
+    position: relative;
 }
 
 .tecla {
     border: 1px solid #000;
     cursor: pointer;
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    user-select: none;
 }
 
 .tecla.branca {
     width: 60px;
     height: 250px;
     background-color: white;
-    margin: 0 2px;
+    margin-right: 2px;
     z-index: 1;
 }
 
@@ -33,36 +37,25 @@ h1 {
     width: 40px;
     height: 150px;
     background-color: black;
+    color: white;
     position: absolute;
-    z-index: 2; /* As teclas pretas devem estar acima das brancas */
-    margin-left: -20px; /* Centraliza a tecla preta entre duas brancas */
+    z-index: 2; /* Teclas pretas sobre as brancas */
+    margin-left: -20px;
 }
 
-/* Posição das teclas pretas sobre as brancas */
-.tecla.preta:nth-child(2) { /* C# */
-    left: 45px;
+/* Posição das teclas pretas */
+.tecla.preta:nth-child(2) { left: 45px; }
+.tecla.preta:nth-child(4) { left: 135px; }
+.tecla.preta:nth-child(7) { left: 315px; }
+.tecla.preta:nth-child(9) { left: 405px; }
+.tecla.preta:nth-child(11) { left: 495px; }
+
+/* Efeitos ao pressionar teclas */
+.tecla.ativa {
+    background-color: #ccc;
+    transition: background-color 0.1s;
 }
 
-.tecla.preta:nth-child(3) { /* D# */
-    left: 135px;
-}
-
-.tecla.preta:nth-child(5) { /* F# */
-    left: 315px;
-}
-
-.tecla.preta:nth-child(6) { /* G# */
-    left: 405px;
-}
-
-.tecla.preta:nth-child(7) { /* A# */
-    left: 495px;
-}
-
-.tecla.branca:hover {
-    background-color: #f0f0f0;
-}
-
-.tecla.preta:hover {
-    background-color: #333;
+.tecla.preta.ativa {
+    background-color: #555;
 }
