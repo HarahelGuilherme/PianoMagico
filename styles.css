@@ -36,8 +36,8 @@ h1 {
 }
 
 .tecla.preta {
-    width: 30px;
-    height: 140px; /* Altura reduzida para encaixar melhor */
+    width: 40px;
+    height: 120px; /* Altura reduzida para encaixar melhor */
     background-color: black;
     color: white;
     position: absolute;
