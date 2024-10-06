@@ -13,7 +13,7 @@ h1 {
 .piano {
     display: flex;
     position: relative;
-    width: 420px; /* Tamanho ajustado para caber todas as teclas */
+    width: 440px; /* Ajuste de largura para caber todas as teclas */
 }
 
 .tecla {
@@ -25,7 +25,6 @@ h1 {
     font-weight: bold;
     user-select: none;
     position: relative;
-    z-index: 1; /* Por padrão, as teclas brancas ficam abaixo */
 }
 
 .tecla.branca {
@@ -33,37 +32,37 @@ h1 {
     height: 250px;
     background-color: white;
     margin-right: 2px;
+    z-index: 1; /* Brancas ficam abaixo */
 }
 
 .tecla.preta {
     width: 40px;
-    height: 150px;
+    height: 160px; /* Altura reduzida para encaixar sobre as brancas */
     background-color: black;
     color: white;
     position: absolute;
-    z-index: 2; /* As teclas pretas ficam acima das brancas */
-    margin-left: -20px; /* Para centralizar sobre as teclas brancas */
+    z-index: 2; /* Pretas ficam acima das brancas */
 }
 
 /* Posição das teclas pretas sobre as brancas */
-.tecla.preta:nth-child(2) { /* C# */
-    left: 40px;
+.tecla.preta:nth-of-type(2) { /* C# */
+    left: 40px; /* Alinhado acima de D */
 }
 
-.tecla.preta:nth-child(3) { /* D# */
-    left: 125px;
+.tecla.preta:nth-of-type(4) { /* D# */
+    left: 125px; /* Alinhado acima de E */
 }
 
-.tecla.preta:nth-child(5) { /* F# */
-    left: 265px;
+.tecla.preta:nth-of-type(7) { /* F# */
+    left: 265px; /* Alinhado acima de G */
 }
 
-.tecla.preta:nth-child(6) { /* G# */
-    left: 350px;
+.tecla.preta:nth-of-type(9) { /* G# */
+    left: 350px; /* Alinhado acima de A */
 }
 
-.tecla.preta:nth-child(7) { /* A# */
-    left: 435px;
+.tecla.preta:nth-of-type(11) { /* A# */
+    left: 435px; /* Alinhado acima de B */
 }
 
 /* Efeitos ao pressionar teclas */
